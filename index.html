@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="movie-contain">
+        <label >Pick a movie</label>
+        <select  id="movie" onchange="updateName(this)">
+            <option value="50" class="mn">The Godfather (50$)</option>
+            <option value="60"  class="mn">The Wolf of Wall Street (60$)</option>
+            <option value="70"  class="mn">The Irishman (70$)</option>
+            <option value="50"  class="mn">Shutter Island (50$)</option>
+            <option value="60"  class="mn">Scar Face (60$)</option>
+        </select>
+    </div>
+
+    <ul class="show">
+        <li>
+            <div class="seats"></div>
+            <small>Free</small>
+        </li>
+        <li>
+            <div class="seats booked"></div>
+            <small>Booked</small>
+        </li>
+        <li>
+            <div class="seats selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seats love"></div>
+            <small>Love Seats</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="screen"></div>
+
+        
+
+        <div class="row">
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+        </div>
+
+        <div class="row">
+            <div class="seats "></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats booked"></div>
+            <div class="seats"></div>
+            <div class="seats booked"></div>
+            <div class="seats booked"></div>
+            <div class="seats"></div>
+        </div>
+
+        <div class="row">
+            <div class="seats booked"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats "></div>
+            <div class="seats booked"></div>
+            <div class="seats "></div>
+            <div class="seats"></div>
+            <div class="seats "></div>
+        </div>
+
+        <div class="row">
+            <div class="seats booked"></div>
+            <div class="seats"></div>
+            
+            <div class="seats love"></div>
+            <div class="seats booked"></div>
+            <div class="seats "></div>
+            <div class="seats booked"></div>
+            <div class="seats booked"></div>
+        </div>
+
+        <div class="row">
+            <div class="seats love"></div>
+            
+            <div class="seats booked"></div>
+            <div class="seats booked"></div>
+            <div class="seats "></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+        </div>
+
+        <div class="row">
+            <div class="seats booked"></div>
+            <div class="seats booked"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats"></div>
+            <div class="seats booked"></div>
+            <div class="seats "></div>
+            <div class="seats"></div>
+        </div>
+    </div>
+
+    <p class="info">You have selected <span id="count">0 </span> seats for a price of <span id="total">0</span>$ for the movie <span id="moviename">The Godfather (50$)</span> </p>
+    
+    <script src="js.js"></script>
+</body>
+</html>
